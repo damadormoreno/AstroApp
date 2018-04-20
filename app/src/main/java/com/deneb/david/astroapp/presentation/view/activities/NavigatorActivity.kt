@@ -20,6 +20,8 @@ class NavigatorActivity : AppCompatActivity(), HomeFragment.OnFragmentInteractio
 
         val apiKey = BuildConfig.ASTROBIN_KEY
         val apiSecret = BuildConfig.ASTROBIN_SECRET
+        val nasaKey = BuildConfig.NASA_KEY
+
         val bottombar = find<BottomNavigationBar>(R.id.bottomBar)
 
         supportFragmentManager.beginTransaction().replace(R.id.container, HomeFragment()).commit()
